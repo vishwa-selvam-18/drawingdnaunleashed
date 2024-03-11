@@ -1,0 +1,17 @@
+---
+import MainLayout from "./MainLayout.astro"
+const { frontmatter } = Astro.props;
+
+---
+
+<MainLayout>
+    <div class=" space-y-4 md:px-10 px-4 py-4 md:py-10 m-4">
+        <h1 class="text-xl font-medium text-black">{frontmatter.title}</h1>
+        <p class=" text-lg font-normal text-gray-600">{frontmatter.pubDate}</p>
+        <p class=" text-lg font-normal text-black"><em>{frontmatter.description}</em></p>
+        <p class=" text-base font-normal text-gray-500">Written by: {frontmatter.author}</p>
+        <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+        <slot />
+    </div>
+
+</MainLayout>

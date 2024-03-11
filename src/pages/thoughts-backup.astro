@@ -1,0 +1,46 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Blog from "../components/blog.astro";
+
+const blogs = [
+{
+	name: "This is the Blog",
+	desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Euismod lacinia at quis risus sed vulputate odio. Feugiat nisl pretium fusce id velit. At tellus at urna condimentum mattis pellentesque id nibh tortor. Ultricies lacus sed turpis tincidunt id aliquet. Nisi scelerisque eu ultrices vitae auctor. Vel pretium lectus quam id leo in vitae. Eu feugiat pretium nibh ipsum. Orci dapibus ultrices in iaculis. Nunc sed augue lacus viverra vitae. Integer eget aliquet nibh praesent tristique magna sit amet.",
+	date: "2023-08-15",
+	url: "https://vishwadrawingdna.wordpress.com/"
+},
+{
+	name: "This is the Blog",
+	desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Euismod lacinia at quis risus sed vulputate odio. Feugiat nisl pretium fusce id velit. At tellus at urna condimentum mattis pellentesque id nibh tortor. Ultricies lacus sed turpis tincidunt id aliquet. Nisi scelerisque eu ultrices vitae auctor. Vel pretium lectus quam id leo in vitae. Eu feugiat pretium nibh ipsum. Orci dapibus ultrices in iaculis. Nunc sed augue lacus viverra vitae. Integer eget aliquet nibh praesent tristique magna sit amet.",
+	date: "2023-08-15",
+	url: "https://vishwadrawingdna.wordpress.com/"
+},
+{
+	name: "This is the Blog",
+	desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Euismod lacinia at quis risus sed vulputate odio. Feugiat nisl pretium fusce id velit. At tellus at urna condimentum mattis pellentesque id nibh tortor. Ultricies lacus sed turpis tincidunt id aliquet. Nisi scelerisque eu ultrices vitae auctor. Vel pretium lectus quam id leo in vitae. Eu feugiat pretium nibh ipsum. Orci dapibus ultrices in iaculis. Nunc sed augue lacus viverra vitae. Integer eget aliquet nibh praesent tristique magna sit amet.",
+	date: "2023-08-15",
+	url: "https://vishwadrawingdna.wordpress.com/"
+},
+{
+	name: "This is the Blog",
+	desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Euismod lacinia at quis risus sed vulputate odio. Feugiat nisl pretium fusce id velit. At tellus at urna condimentum mattis pellentesque id nibh tortor. Ultricies lacus sed turpis tincidunt id aliquet. Nisi scelerisque eu ultrices vitae auctor. Vel pretium lectus quam id leo in vitae. Eu feugiat pretium nibh ipsum. Orci dapibus ultrices in iaculis. Nunc sed augue lacus viverra vitae. Integer eget aliquet nibh praesent tristique magna sit amet.",
+	date: "2023-08-15", 
+	url: "https://vishwadrawingdna.wordpress.com/"
+},
+{
+	name: "This is the Blog",
+	desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Euismod lacinia at quis risus sed vulputate odio. Feugiat nisl pretium fusce id velit. At tellus at urna condimentum mattis pellentesque id nibh tortor. Ultricies lacus sed turpis tincidunt id aliquet. Nisi scelerisque eu ultrices vitae auctor. Vel pretium lectus quam id leo in vitae. Eu feugiat pretium nibh ipsum. Orci dapibus ultrices in iaculis. Nunc sed augue lacus viverra vitae. Integer eget aliquet nibh praesent tristique magna sit amet.",
+	date: "2023-08-15",
+	url: "https://vishwadrawingdna.wordpress.com/"
+},
+]; 
+
+---
+
+<MainLayout>
+
+	<div class="flex-wrap space-y-4 border-spacing-9 px-4">
+     	{blogs.map((e) => <Blog blog={e} />)}
+    </div>
+ 
+</MainLayout>

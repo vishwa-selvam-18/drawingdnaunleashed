@@ -1,0 +1,23 @@
+---
+// we are importing the navigation and footer component here to use for the layout below
+import Footer from "../components/footer.astro";
+import Nav from "../components/nav.astro";
+---
+
+<html lang="en" class=" scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Drawing DNA Unleashed</title>
+	</head>
+	<body class=" bg-offwhite justify-items-center place-content-center md:mx-4 lg:mx-8 gap-8">
+        <!-- This brings in the navigation into the page -->
+		<Nav />
+        <!-- this is the slot where the body content will go -->
+		<slot />
+        <!-- This brings in the footer into the page -->
+		<Footer />
+	</body>
+</html>

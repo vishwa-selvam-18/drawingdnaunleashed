@@ -1,0 +1,84 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout>
+
+    <!-- Section -->
+    <section class="Project-Nav w-full md:w-4/5 my-10 mx-auto">
+         <div class="px-6 flex flex-col md:flex-row md:px-32 md:py-12 gap-4">
+            <a href="#3d" class="border-2 rounded-lg hover:shadow-lg  hover:cursor-pointer">
+                 <div class="card-1 space-y-2 flex-row p-4 ">
+                    <p class=" Heading text-2xl text-black font-bold leading-relaxed">3D</p>
+                    <p class=" Heading text-base text-black font-normal leading-relaxed">Iam an 3D animation and modelling enthusiast.</p>
+                </div>
+            </a>
+            <!-- href="desigs" is a reference that points to any tag that has an id="designs" once this clicked then it will take them to that section. Based on the scroll behaviour set in html tag the scroll will happen -->
+            <a href="#designs" class="border-2 rounded-lg hover:shadow-lg hover:cursor-pointer">
+                <div class="card-1 space-y-2 flex-row p-4 ">
+                    <p class=" Heading text-2xl text-black font-bold leading-relaxed">Designs</p>
+                    <p class=" Heading text-base text-black font-normal leading-relaxed">I do graphic design time to time outside of my job too</p>
+                </div>
+            </a>
+            <a href="#ui" class="border-2 rounded-lg hover:shadow-lg hover:cursor-pointer">
+                <div class="card-1 space-y-2 flex-row p-4 ">
+                    <p class=" Heading text-2xl text-black font-bold leading-relaxed">UI Design</p>
+                    <p class=" Heading text-base text-black font-normal leading-relaxed">I also do some user interface design</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- Section End -->
+
+    <!--- 3D Section -->
+    <div id="3d" class="gallery-wrapper my-10 md:my-14 md:px-32 w-full px-6 ">
+        <h3 class=" text-2xl tex-normal text-grey md:py-8 py-4 font-medium">3D Works</h3>
+        <div class="columns-1 gap-4 space-y-4 lg:space-y-4 sm:space-y-4 sm:columns-1 md:columns-3 3xl:columns-3">
+            <img src="My Chair 3D Model.png" class="rounded-lg shadow-md" loading="lazy" alt="A 3D render of a chair that i made in blender"></img>
+            <img src="Scratch Render - My Studio.png" class="rounded-lg shadow-md" loading="lazy" alt="A 3D render of a studio that iam building in blender"></img>
+            <img src="My First Sculpt.png" class="rounded-lg shadow-md" loading="lazy" alt="My first charecter sculpting in blender"></img>
+        </div>
+    </div> 
+    <!-- 3D Section End -->
+
+    <!-- Project Section -->
+    <section id="ui" class="w-full my-12 md:px-32 px-6 flex-col">
+        <h3 class=" text-2xl tex-normal text-grey font-medium pb-2">UI Designs</h3>
+        <!-- Project 1 Section -->
+        <div class="Projects w-full my-2 mb-6 ">
+            <div class="Project-wrapper flex flex-col md:flex-row md:py-12 gap-8 ">
+                <div class="image-container md:w-3/5 flex md:flex-row gap-4 md:gap-8 justify-center px-2">
+                    <img src="Artisverything-Home.png" class=" w-1/2 max-w-xs object-contain md:mt-10 rounded-xl md:m-2" alt="Image of an blog website design that i did " loading="lazy">
+                    <img src="Artisverything-Podcasts.png" class=" w-1/2 max-w-xs object-contain md:mb-10 rounded-xl md:m-2" alt="Image of an blog website degign that i did" loading="lazy">
+                </div>
+                <div class=" md:pb-16 space-y-4 self-end md:w-2/5">
+                    <p class="Date text-grey">June 2023</p>
+                    <h3 class="Heading text-black text-2xl font-medium">A Blog - Website Design</h3>
+                    <p class="Brief1 leading-relaxed">Artisverything is a blog website for one of my peers. He is a really good writer who has a passion in creating things and especially writing. He asked me if I can design a website for him where he can write and post about his other projects as well. The idea behind the design is something that is very simple  yet looks good and really functional. The fonts are coosen for good readeblity and the colours are inspired from Michelangelo's sculptures</p>
+                    <p class="Brief2 Leaading-relaxed">The idea of getting colour inspiration is completely the other guys idea as he is intrested and facinated by those very much. Rest of all things comes down just to a minmal good looking site yet fades away as the visitor focuses on the blog and indulging themself in the process of reading it. So that it wont be in their way, creating a good experience for reading as thats what we want this webste to be visited</p>
+                </div>
+            </div>
+        </div>
+        <!-- End of Project 1 Section -->
+
+        <!-- Project 2 Section -->
+        <div class="Projects w-full my-8">
+            <div class="Project-wrapper flex flex-col md:flex-row md:py-12 gap-8 ">
+                <div class="image-container md:w-3/5 flex md:flex-row gap-4 md:gap-8 justify-center px-2">
+                    <img src="Performance Tracker-Home.png" class=" w-1/2 max-w-xs object-contain md:mt-10 rounded-xl md:m-2" alt="Image of a blog website design that i did " loading="lazy">
+                    <img src="Performance Tracker-App Bar.png" class=" w-1/2 max-w-xs object-contain md:mb-10 rounded-xl md:m-2" alt="Image of a blog website design that i did" loading="lazy">
+                </div>
+                <div class=" md:pb-16 space-y-4 self-end md:w-2/5">
+                    <p class="Date text-grey">June 2023</p>
+                    <h3 class="Heading text-black text-2xl font-medium ">Performance Tracker App</h3>
+                    <p class="Brief1 leading-relaxed">Started creating this app in a request from one my peers. Took it as an oppurtunity to learn more on UI Design. Spent well over 60 to 80 hours on it. Pretty happy with the results at that time. Yet an unfinished project as i never got to design the employer side application :)</p>
+                    <p class="Brief2 leading-relaxed">The Objective is to create an mobile application that works as a single place to monitor their daily visits, Orders taken, Progress of the ordes, Products, Setting Appointments, Handling attendance and Leave applys and related things. An overall applicatoin for an employee to track and moniotr everythig he do so that it would be easy for both the business and the employee to carryouot the operations.</p>
+                    <p class="Brief3 leading-relaxed">Thinking of creating seperate sections for having the whole project up here but don't have enough time to do so 😅.</p>
+                </div>
+            </div>
+        </div>
+        <!-- End of Project 2 Section -->
+    </section>
+    <!-- Project Section -->
+ 
+</MainLayout>
